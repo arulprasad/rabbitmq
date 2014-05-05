@@ -66,6 +66,7 @@ default['rabbitmq']['tcp_listen_exit_on_close'] = false
 default['rabbitmq']['tcp_listen_keepalive'] = false
 
 default['rabbitmq']['tcp_listeners'] = [5672]
+default['rabbitmq']['heartbeat'] = 580
 
 # virtualhosts
 default['rabbitmq']['virtualhosts'] = []
