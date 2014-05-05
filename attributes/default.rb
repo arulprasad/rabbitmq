@@ -65,6 +65,8 @@ default['rabbitmq']['tcp_listen_nodelay'] = true
 default['rabbitmq']['tcp_listen_exit_on_close'] = false
 default['rabbitmq']['tcp_listen_keepalive'] = false
 
+default['rabbitmq']['tcp_listeners'] = [5672]
+
 # virtualhosts
 default['rabbitmq']['virtualhosts'] = []
 default['rabbitmq']['disabled_virtualhosts'] = []

@@ -35,6 +35,8 @@
                                   {nodelay,<%= node['rabbitmq']['tcp_listen_nodelay'] %>},
                                   {exit_on_close,<%= node['rabbitmq']['tcp_listen_exit_on_close'] %>},
                                   {keepalive,<%= node['rabbitmq']['tcp_listen_keepalive'] %>}]},
+    {tcp_listeners, <%= node['rabbitmq']['tcp_listeners'] %>},
+ 
 <% if node['rabbitmq']['disk_free_limit_relative'] -%>
     {disk_free_limit, {mem_relative, <%= node['rabbitmq']['disk_free_limit_relative'] %>}},
 <% end %>
